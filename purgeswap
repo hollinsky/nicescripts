@@ -1,0 +1,7 @@
+#!/bin/bash
+swapoff /swapfile
+rm /swapfile
+truncate -s 6G /swapfile
+chmod 0600 /swapfile
+mkswap /swapfile
+swapon /swapfile
